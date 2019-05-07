@@ -22,7 +22,7 @@ Plug 'DoxygenToolkit.vim'
 Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
 Plug 'ervandew/supertab'
-
+Plug 'jiangmiao/auto-pairs'
 
 " Any valid git URL is allowed
 "Plug 'https://github.com/junegunn/vim-github-dashboard.git'
