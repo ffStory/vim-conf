@@ -98,7 +98,9 @@ let g:rooter_silent_chdir = 1
 "============================== rooter end
 
 "============================== ale start
-" let b:ale_fixers = {'javascript': ['eslint']}
+let g:ale_linters = {
+\   'javascript': ['eslint'],
+\}
 let g:ale_fixers = {
 \   '*': ['remove_trailing_lines', 'trim_whitespace'],
 \   'javascript': ['eslint'],
