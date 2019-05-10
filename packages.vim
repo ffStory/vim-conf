@@ -26,17 +26,6 @@ let g:airline_theme='gruvbox'
 let g:airline_powerline_fonts=1
 "==============================airline  end
 
-"==============================DoxygenToolkit start
-let g:DoxygenToolkit_commentType = "JS"
-let g:DoxygenToolkit_briefTag_pre ="@brief "
-let g:DoxygenToolkit_paramTag_pre="@param "
-let g:DoxygenToolkit_returnTag="@returns "
-" let g:DoxygenToolkit_briefTag_funcName="yes"
-" let g:DoxygenToolkit_maxFunctionProtoLines = 30
-let g:DoxygenToolkit_authorName="WF"
-let g:DoxygenToolkit_licenseTag="Happy Coding"
-"============================== DoxygenToolkit end
-
 "============================== YouCompleteMe start
 let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/.ycm_extra_conf.py'
 " 设置跳转到方法/函数定义的快捷键
