@@ -138,3 +138,14 @@ let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 " If you want :UltiSnipsEdit to split your window.
 " let g:UltiSnipsEditSplit="vertical"
 "============================== ultisnips start
+
+"============================== DoxygenToolkit start
+" let g:DoxygenToolkit_commentType = "TS"
+let g:DoxygenToolkit_briefTag_pre ="@brief "
+let g:DoxygenToolkit_paramTag_pre="@param "
+let g:DoxygenToolkit_returnTag="@returns "
+" let g:DoxygenToolkit_briefTag_funcName="yes"
+" let g:DoxygenToolkit_maxFunctionProtoLines = 30
+let g:DoxygenToolkit_authorName="FAN WANG"
+let g:DoxygenToolkit_licenseTag="Happy Coding"
+"============================== DoxygenToolkit end
