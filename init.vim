@@ -53,7 +53,7 @@ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 " Initialize plugin system
 call plug#end()
 
-execute 'source' '~/.vim/vim-plug/packages.vim'
-execute 'source' '~/.vim/vim-plug/funcs.vim'
-execute 'source' '~/.vim/vim-plug/keybindings.vim'
-execute 'source' '~/.vim/vim-plug/custom.vim'
+execute 'source' '~/.vim/vim-conf/packages.vim'
+execute 'source' '~/.vim/vim-conf/funcs.vim'
+execute 'source' '~/.vim/vim-conf/keybindings.vim'
+execute 'source' '~/.vim/vim-conf/custom.vim'

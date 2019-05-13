@@ -1,7 +1,7 @@
 将下面代码 写入到 .vimrc 中
 
 if has('gui_running')
-execute 'source' '~/.vim/vim-plug/init.vim'
+execute 'source' '~/.vim/vim-conf/init.vim'
 endif
 
 

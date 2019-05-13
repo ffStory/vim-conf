@@ -4,7 +4,7 @@ nnoremap <c-k> <c-w><c-k>
 nnoremap <c-l> <c-w><c-l>
 nnoremap <c-h> <c-w><c-h>
 
-nnoremap <F2> :execute 'e ~/.vim/vim-plug/'<CR>
+nnoremap <F2> :execute 'e ~/.vim/vim-conf/'<CR>
 nnoremap <F3> :execute 'Startify'<CR>
 nnoremap <SPACE>a :Ag
 nnoremap <SPACE>r :History<CR>
