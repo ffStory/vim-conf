@@ -35,8 +35,8 @@ else
 	colorscheme desert
 endif
 
-let g:Work1='~/Desktop/work/kd/kingdom/client/kingdom/assets/script/'
-let g:Work2='~/Desktop/work/hap/heroes_and_puzzles-client/hap/assets/Script/'
+let g:kd='~/Desktop/work/kd/kingdom/client/kingdom/assets/script/'
+let g:hap='~/Desktop/work/hap/heroes_and_puzzles-client/hap/assets/Script/'
 
-call AddPath(Work1, Work2)
+call AddPath(kd, hap)
 set tags=./tags;
