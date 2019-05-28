@@ -1,4 +1,4 @@
-syntax on
+syntax enable
 filetype on
 filetype plugin on
 set encoding=utf-8
