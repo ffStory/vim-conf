@@ -20,7 +20,6 @@ Plug 'airblade/vim-rooter'
 Plug 'Valloric/YouCompleteMe'
 Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
-Plug 'ervandew/supertab'
 Plug 'jiangmiao/auto-pairs'
 Plug 'vim-scripts/DoxygenToolkit.vim'
 
