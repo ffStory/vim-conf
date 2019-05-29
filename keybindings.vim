@@ -14,5 +14,3 @@ nnoremap <SPACE>f :Files<CR>
 nnoremap <LEADER>f :find<SPACE>
 
 map <C-n> :NERDTreeToggle<CR>
-
-nnoremap <c-i> :ALEGoToDefinition<CR>
