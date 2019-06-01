@@ -79,12 +79,12 @@ let g:rooter_silent_chdir = 1
 "============================== ale start
 let g:ale_linters = {
 \   'javascript': ['eslint'],
-\   'typescript': ['tsc', 'eslint'],
+\   'typescript': ['eslint'],
 \}
 let g:ale_fixers = {
 \   '*': ['remove_trailing_lines', 'trim_whitespace'],
 \   'javascript': ['eslint'],
-\   'typescript': ['tsc, eslint'],
+\   'typescript': ['eslint'],
 \}
 let g:ale_fix_on_save = 1
 let g:ale_completion_enabled = 0
