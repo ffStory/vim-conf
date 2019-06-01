@@ -44,16 +44,6 @@ let g:ycm_disable_for_files_larger_than_kb = 500
 " let g:ycm_key_invoke_completion = '<c-a>'
 "============================== YouCompleteMe end
 
-"============================== ag start
-" let g:ag_working_path_mode='r'
-" let g:ag_prg='ag --nocolor --noheading --nogroup --column --vimgrep'
-
-" if executable('ag')
-  " " Use ag over grep
-  " set grepprg=ag\ --nogroup\ --nocolor\ --column\--vimgrep
-" endif
-"============================== ag end
-
 "============================== fzf start
 let g:fzf_layout = { 'down': '~30%' }
 " Customize fzf colors to match your color scheme
@@ -89,12 +79,12 @@ let g:rooter_silent_chdir = 1
 "============================== ale start
 let g:ale_linters = {
 \   'javascript': ['eslint'],
-\   'typescript': ['eslint'],
+\   'typescript': ['tsc', 'eslint'],
 \}
 let g:ale_fixers = {
 \   '*': ['remove_trailing_lines', 'trim_whitespace'],
 \   'javascript': ['eslint'],
-\   'typescript': ['eslint'],
+\   'typescript': ['tsc, eslint'],
 \}
 let g:ale_fix_on_save = 1
 let g:ale_completion_enabled = 0
