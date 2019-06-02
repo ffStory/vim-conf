@@ -13,3 +13,9 @@ cmak (youcompleteme)
 nodejs -> ts 安装
 poweline 字体
 # vim-plug
+
+
+#typescript
+eslint
+@typescript-eslint/parser
+@typescript-eslint/eslint-plugin
