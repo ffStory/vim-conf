@@ -117,9 +117,6 @@ let NERDTreeIgnore = ['\.meta$']
 let g:javascript_plugin_jsdoc = 1
 let g:javascript_plugin_ngdoc = 1
 let g:javascript_plugin_flow = 1
-
-set conceallevel=1
-map <leader>l :exec &conceallevel ? "set conceallevel=0" : "set conceallevel=1"<CR>
 "============================== vim-js end
 
 
