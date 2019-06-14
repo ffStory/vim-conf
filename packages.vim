@@ -140,3 +140,9 @@ let g:DoxygenToolkit_returnTag="@returns "
 let g:DoxygenToolkit_authorName="FAN WANG"
 let g:DoxygenToolkit_licenseTag="Happy Coding"
 "============================== DoxygenToolkit end
+
+
+"============================== indentline start
+let g:indentLine_setColors = 0
+let g:indentLine_char_list = ['|', '¦', '┆', '┊']
+"============================== indentline end

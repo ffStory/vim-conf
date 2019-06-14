@@ -22,7 +22,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'vim-scripts/DoxygenToolkit.vim'
-
+Plug 'Yggdroot/indentLine'
 " Any valid git URL is allowed
 "Plug 'https://github.com/junegunn/vim-github-dashboard.git'
 
