@@ -143,6 +143,31 @@ let g:DoxygenToolkit_licenseTag="Happy Coding"
 
 
 "============================== indentline start
-let g:indentLine_setColors = 0
+" let g:indentLine_setColors = 0
 let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 "============================== indentline end
+
+"============================== easymotion start
+" map <Leader> <Plug>(easymotion-prefix)
+map f <Plug>(easymotion-prefix)
+map fs <Plug>(easymotion-s)
+map ff <Plug>(easymotion-f)
+map fj <Plug>(easymotion-j)
+map fk <Plug>(easymotion-k)
+map fl <Plug>(easymotion-lineforward)
+map fh <Plug>(easymotion-linebackward)
+" 忽略大小写
+let g:EasyMotion_smartcase = 1
+
+" fs 全屏搜索
+" ff 往下搜索
+" fF 往上搜索
+" fl 行内向右搜索
+" fj 行间向下搜索
+" fk 行间向上搜索
+" fh 行内向左搜索
+" fw 往下搜索一个单词开始处
+" fb 往上搜索一个单词开始处
+" fe 往下搜索一个单词结尾处
+" fge 往下搜索一个单词结尾处
+"============================== easymotion end
