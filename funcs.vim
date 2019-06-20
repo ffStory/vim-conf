@@ -20,7 +20,7 @@ command! -bang -nargs=* Ag
 " \   'rg --column --line-number --no-heading --color=always --colors "match:fg:red" --colors "path:fg:yellow"  --smart-case '.shellescape(<q-args>), 1,
 command! -bang -nargs=* Rg
 			\ call fzf#vim#grep(
-            \   'rg --line-number --column --color=always --ignore-case --colors "path:fg:yellow" --colors "match:fg:red" --colors "line:fg:253,219,178" '.shellescape(<q-args>), 1,
+            \   'rg --line-number --color=always --ignore-case --colors "path:fg:245,128,24" --colors "match:fg:215,95,95" --colors "line:fg:253,219,178" '.shellescape(<q-args>), 1,
 			\   <bang>0 ? fzf#vim#with_preview('up:60%')
 			\           : fzf#vim#with_preview('right:50%:hidden', '?'),
 			\   <bang>0)
