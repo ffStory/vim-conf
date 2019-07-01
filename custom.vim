@@ -40,3 +40,6 @@ let g:hap='~/Desktop/work/hap/heroes_and_puzzles-client/hap/assets/Script/'
 
 call AddPath(kd, hap)
 set tags=./tags;
+
+
+autocmd BufNewFile *.ts 0r ~/.vim/vim-conf/template/typescript.ts
