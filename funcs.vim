@@ -6,6 +6,9 @@ endfunction
 
 command -nargs=1 Cd :execute 'cd '<args>
 
+"json format
+command  Jf :execute '%!python -m json.tool'
+
 "   :Ag  - Start fzf with hidden preview window that can be enabled with "?" key
 "   :Ag! - Start fzf in fullscreen and display the preview window above
 "   ~/.agignore 中定义忽略的文件
