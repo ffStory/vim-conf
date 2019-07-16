@@ -24,6 +24,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'vim-scripts/DoxygenToolkit.vim'
 Plug 'Yggdroot/indentLine'
 Plug 'easymotion/vim-easymotion'
+Plug 'OmniSharp/omnisharp-vim'
 " Any valid git URL is allowed
 "Plug 'https://github.com/junegunn/vim-github-dashboard.git'
 
