@@ -36,12 +36,20 @@ let g:ycm_key_list_previous_completion = ['<S-TAB>', '<c-p>', '<Up>']
 " let g:ycm_key_list_select_completion = ['<c-n>', '<Down>']"
 " let g:ycm_key_list_previous_completion = ['<c-p>', '<Up>']
 let g:ycm_auto_trigger = 1
-" 最小自动触发补全的字符大小设置为 3
+" 最小自动触发字符补全的字符大小
 let g:ycm_min_num_of_chars_for_completion = 3
+" 字符补全 作为候选补全项的最下字符
+let g:ycm_min_num_identifier_candidate_chars = 4
+
 " YCM的previw窗口比较恼人，还是关闭比较好
 set completeopt-=preview
 let g:ycm_disable_for_files_larger_than_kb = 500
 " let g:ycm_key_invoke_completion = '<c-a>'
+
+let g:ycm_filetype_blacklist = {
+      \ 'text': 1,
+      \}
+
 "============================== YouCompleteMe end
 
 "============================== fzf start
@@ -172,69 +180,3 @@ let g:EasyMotion_smartcase = 1
 " fe 往下搜索一个单词结尾处
 " fge 往下搜索一个单词结尾处
 "============================== easymotion end
-
-
-"============================== omniSharp start
-let g:OmniSharp_server_stdio = 1
-let g:OmniSharp_server_use_mono = 1
-let g:OmniSharp_highlight_types = 2
-let g:OmniSharp_selector_ui = 'fzf'
-let g:OmniSharp_highlight_groups = {
-\ 'csUserIdentifier': [
-\   'constant name', 'enum member name', 'field name', 'identifier',
-\   'local name', 'parameter name', 'property name', 'static symbol'],
-\ 'csUserInterface': ['interface name'],
-\ 'csUserMethod': ['extension method name', 'method name'],
-\ 'csUserType': ['class name', 'enum name', 'namespace name', 'struct name']
-\}
-
-augroup omnisharp_commands
-    autocmd!
-
-    " Show type information automatically when the cursor stops moving
-    autocmd CursorHold *.cs call OmniSharp#TypeLookupWithoutDocumentation()
-
-    " The following commands are contextual, based on the cursor position.
-    autocmd FileType cs nnoremap <buffer> gd :OmniSharpGotoDefinition<CR>
-    autocmd FileType cs nnoremap <buffer> <Leader>fi :OmniSharpFindImplementations<CR>
-    autocmd FileType cs nnoremap <buffer> <Leader>fs :OmniSharpFindSymbol<CR>
-    autocmd FileType cs nnoremap <buffer> <Leader>fu :OmniSharpFindUsages<CR>
-
-    " Finds members in the current buffer
-    autocmd FileType cs nnoremap <buffer> <Leader>fm :OmniSharpFindMembers<CR>
-
-    autocmd FileType cs nnoremap <buffer> <Leader>fx :OmniSharpFixUsings<CR>
-    autocmd FileType cs nnoremap <buffer> <Leader>tt :OmniSharpTypeLookup<CR>
-    autocmd FileType cs nnoremap <buffer> <Leader>dc :OmniSharpDocumentation<CR>
-    autocmd FileType cs nnoremap <buffer> <C-\> :OmniSharpSignatureHelp<CR>
-    autocmd FileType cs inoremap <buffer> <C-\> <C-o>:OmniSharpSignatureHelp<CR>
-
-    " Navigate up and down by method/property/field
-    autocmd FileType cs nnoremap <buffer> <C-k> :OmniSharpNavigateUp<CR>
-    autocmd FileType cs nnoremap <buffer> <C-j> :OmniSharpNavigateDown<CR>
-
-    " Find all code errors/warnings for the current solution and populate the quickfix window
-    autocmd FileType cs nnoremap <buffer> <Leader>cc :OmniSharpGlobalCodeCheck<CR>
-augroup END
-
-" Contextual code actions (uses fzf, CtrlP or unite.vim when available)
-nnoremap <Leader><Space> :OmniSharpGetCodeActions<CR>
-" Run code actions with text selected in visual mode to extract method
-xnoremap <Leader><Space> :call OmniSharp#GetCodeActions('visual')<CR>
-
-" Rename with dialog
-nnoremap <Leader>nm :OmniSharpRename<CR>
-nnoremap <F2> :OmniSharpRename<CR>
-" Rename without dialog - with cursor on the symbol to rename: `:Rename newname`
-command! -nargs=1 Rename :call OmniSharp#RenameTo("<args>")
-
-nnoremap <Leader>cf :OmniSharpCodeFormat<CR>
-
-" Start the omnisharp server for the current solution
-nnoremap <Leader>ss :OmniSharpStartServer<CR>
-nnoremap <Leader>sp :OmniSharpStopServer<CR>
-
-" Enable snippet completion
-" let g:OmniSharp_want_snippet=1
-
-"============================== omniSharp end

@@ -36,10 +36,9 @@ else
 endif
 
 let g:kd='~/Desktop/work/kd/kingdom/client/kingdom/assets/script/'
-let g:hap='~/Desktop/work/hap/heroes_and_puzzles-client/hap/assets/Script/'
-let g:hap_unity='~/Desktop/work/hap/heroes_and_puzzles_unity-client/Unity/Assets/CustomAssets/Scripts'
+let g:ps='~/Desktop/work/ps/client/kingdom/assets/script/'
 
-call AddPath(kd, hap, hap_unity)
+call AddPath(kd, ps)
 set tags=./tags;
 
 
