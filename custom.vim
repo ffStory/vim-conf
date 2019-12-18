@@ -47,3 +47,4 @@ call AddPath(kd, ps)
 
 " 代码模板
 autocmd BufNewFile *.ts 0r ~/.vim/vim-conf/template/typescript.ts
+autocmd BufNewFile *.js 0r ~/.vim/vim-conf/template/cc_js.js
