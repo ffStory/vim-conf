@@ -18,3 +18,6 @@ nnoremap <SPACE>f :Files<CR>
 nnoremap <LEADER>f :find<SPACE>
 
 map <C-n> :NERDTreeToggle<CR>
+
+nmap ga <Plug>(EasyAlign)
+xmap ga <Plug>(EasyAlign)
