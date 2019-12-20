@@ -20,7 +20,7 @@ Plug 'Valloric/YouCompleteMe'
 Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
 Plug 'jiangmiao/auto-pairs'
-Plug 'vim-scripts/DoxygenToolkit.vim'
+Plug 'vim-scripts/DoxygenToolkit'
 Plug 'Yggdroot/indentLine'
 
 " Any valid git URL is allowed
