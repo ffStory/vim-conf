@@ -6,7 +6,6 @@ call plug#begin('~/.vim/plugged')
 " Make sure you use single quotes
 
 " Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
-Plug 'junegunn/vim-easy-align'
 Plug 'tpope/vim-fugitive'
 Plug 'flazz/vim-colorschemes'
 Plug 'vim-airline/vim-airline'
@@ -18,9 +17,7 @@ Plug 'tpope/vim-surround'
 Plug 'airblade/vim-rooter'
 Plug 'Valloric/YouCompleteMe'
 Plug 'pangloss/vim-javascript'
-Plug 'leafgarland/typescript-vim'
 Plug 'jiangmiao/auto-pairs'
-Plug 'vim-scripts/DoxygenToolkit'
 Plug 'Yggdroot/indentLine'
 
 " Any valid git URL is allowed

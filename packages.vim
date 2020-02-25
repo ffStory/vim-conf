@@ -105,18 +105,6 @@ let g:ale_sign_error = '✗'
 let g:ale_sign_warning = '►'
 "============================== ale end
 
-"============================== typescript-vim start
-" let g:typescript_indent_disable = 1
-let g:typescript_opfirst='\%([<>=,?^%|*/&]\|\([-:+]\)\1\@!\|!=\|in\%(stanceof\)\=\>\)'
-
-let g:typescript_compiler_binary = 'tsc'
-let g:typescript_compiler_options = ''
-if !exists("g:ycm_semantic_triggers")
-  let g:ycm_semantic_triggers = {}
-endif
-let g:ycm_semantic_triggers['typescript'] = ['.']
-"============================== typescript-vim end
-
 "============================== NERDTree start
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 let NERDTreeIgnore = ['\.meta$']
@@ -138,18 +126,6 @@ let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 " If you want :UltiSnipsEdit to split your window.
 " let g:UltiSnipsEditSplit="vertical"
 "============================== ultisnips start
-
-"============================== DoxygenToolkit start
-" let g:DoxygenToolkit_commentType = "TS"
-let g:DoxygenToolkit_briefTag_pre ="@brief "
-let g:DoxygenToolkit_paramTag_pre="@param "
-let g:DoxygenToolkit_returnTag="@return "
-" let g:DoxygenToolkit_briefTag_funcName="yes"
-" let g:DoxygenToolkit_maxFunctionProtoLines = 30
-let g:DoxygenToolkit_authorName="fan Wang <2422312148@qq.com>"
-let g:DoxygenToolkit_licenseTag="Happy Coding"
-"============================== DoxygenToolkit end
-
 
 "============================== indentline start
 " let g:indentLine_setColors = 0
