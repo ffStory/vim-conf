@@ -22,12 +22,14 @@ set autoindent
 set smartindent
 set cindent
 set backspace=indent,eol,start
-
+set showcmd
 set number
 set cursorline
 set showmatch
 " 边搜索边标记
 set incsearch
+" 搜索不循环
+set nowrapscan
 set linespace=4
 " 自动切换目录
 " set autochdir

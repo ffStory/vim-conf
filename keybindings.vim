@@ -4,10 +4,6 @@ nnoremap <c-k> <c-w><c-k>
 nnoremap <c-l> <c-w><c-l>
 nnoremap <c-h> <c-w><c-h>
 
-nnoremap <c-a> 0
-nnoremap <c-k> d$
-nnoremap <c-w> $
-
 nnoremap <F2> :execute 'e ~/.vim/vim-conf/'<CR>
 nnoremap <SPACE>a :Rg<SPACE>
 nnoremap <SPACE>r :History<CR>
