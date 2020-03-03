@@ -12,6 +12,7 @@ nnoremap <SPACE>g :GitFiles<CR>
 nnoremap <SPACE>h :History:<CR>
 nnoremap <SPACE>f :Files<CR>
 nnoremap <LEADER>f :find<SPACE>
-nnoremap <LEADER>s :source ~/.vim/sessions/
+nnoremap <SPACE>s :source ~/.vim/sessions/
+nnoremap <LEADER>s :mksession! ~/.vim/sessions/
 
 map <C-n> :NERDTreeToggle<CR>
