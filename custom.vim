@@ -29,7 +29,7 @@ set showmatch
 " 边搜索边标记
 set incsearch
 " 搜索不循环
-set nowrapscan
+" set nowrapscan
 set linespace=4
 " 自动切换目录
 " set autochdir
@@ -37,7 +37,7 @@ set background=dark
 set tags=./tags;
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.meta,TAGS,GTAGS     " MacOSX/Linux
 " font
-set guifont=DejaVu_Sans_Mono_for_Powerline:h16
+set guifont=DejaVu_Sans_Mono_for_Powerline:h14
 
 " theme
 colorscheme gruvbox
