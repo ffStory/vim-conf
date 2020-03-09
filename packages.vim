@@ -27,7 +27,7 @@ let g:airline_powerline_fonts=1
 "==============================airline  end
 
 "============================== YouCompleteMe start
-let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/.ycm_extra_conf.py'
+let g:ycm_global_ycm_extra_conf = '~/.vim/plugged/YouCompleteMe/third_party/ycmd/.ycm_extra_conf.py'
 " 设置跳转到方法/函数定义的快捷键
 " nnoremap <leader>j :YcmCompleter GoToDefinitionElseDeclaration<CR>
 " 触发补全快捷键

@@ -37,7 +37,7 @@ set background=dark
 set tags=./tags;
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.meta,TAGS,GTAGS     " MacOSX/Linux
 " font
-set guifont=DejaVu_Sans_Mono_for_Powerline:h16
+set guifont=DejaVu_Sans_Mono_for_Powerline:h14
 
 set fileformats=unix,dos
 
