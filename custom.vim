@@ -36,12 +36,10 @@ set linespace=4
 set background=dark
 set tags=./tags;
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.meta,TAGS,GTAGS     " MacOSX/Linux
-if has('gui_running')
-    " font
-    set guifont=DejaVu_Sans_Mono_for_Powerline:h14
-    " theme
-    colorscheme gruvbox
-endif
+" font
+set guifont=DejaVu_Sans_Mono_for_Powerline:h14
+" theme
+colorscheme gruvbox
 set fileformats=unix,dos
 
 
