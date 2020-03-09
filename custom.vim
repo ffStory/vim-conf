@@ -36,13 +36,15 @@ set linespace=4
 set background=dark
 set tags=./tags;
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.meta,TAGS,GTAGS     " MacOSX/Linux
-" font
-set guifont=DejaVu_Sans_Mono_for_Powerline:h14
-
+if has('gui_running')
+    " font
+    set guifont=DejaVu_Sans_Mono_for_Powerline:h14
+    " theme
+    colorscheme gruvbox
+endif
 set fileformats=unix,dos
 
-" theme
-colorscheme gruvbox
+
 
 " 添加搜索路径
 let g:kd='~/Desktop/work/kd/kingdom/client/kingdom/assets/script/'
