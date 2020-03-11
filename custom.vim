@@ -45,9 +45,9 @@ set fileformats=unix,dos
 
 
 " 添加搜索路径
-let g:kd='~/Desktop/work/kd/kingdom/client/kingdom/assets/script/'
-let g:ps='~/Desktop/work/ps/client/kingdom/assets/script/'
-call AddPath(kd, ps)
+" let g:kd='~/Desktop/work/kd/kingdom/client/kingdom/assets/script/'
+" let g:ps='~/Desktop/work/ps/client/kingdom/assets/script/'
+" call AddPath(kd, ps)
 
 " 代码模板
 autocmd BufNewFile *.ts 0r ~/.vim/vim-conf/template/typescript.ts
