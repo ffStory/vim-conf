@@ -33,6 +33,7 @@ set incsearch
 set linespace=4
 " 自动切换目录
 " set autochdir
+set t_Co=256
 set background=dark
 set tags=./tags;
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.meta,TAGS,GTAGS     " MacOSX/Linux
