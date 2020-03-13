@@ -23,8 +23,6 @@ set smartindent
 set cindent
 set backspace=indent,eol,start
 set showcmd
-set number
-set cursorline
 set showmatch
 " 边搜索边标记
 set incsearch
@@ -53,3 +51,8 @@ set fileformats=unix,dos
 " 代码模板
 autocmd BufNewFile *.ts 0r ~/.vim/vim-conf/template/typescript.ts
 autocmd BufNewFile *.js 0r ~/.vim/vim-conf/template/cc_js.js
+
+if has('gui_running')
+    set number
+    set cursorline
+endif

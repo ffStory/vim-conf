@@ -11,14 +11,14 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'tpope/vim-surround'
 Plug 'airblade/vim-rooter'
 Plug 'Valloric/YouCompleteMe'
-Plug 'pangloss/vim-javascript'
 Plug 'jiangmiao/auto-pairs'
 Plug 'flazz/vim-colorschemes'
 Plug 'morhetz/gruvbox'
-Plug 'w0rp/ale'
-Plug 'Yggdroot/indentLine'
 
 if has('gui_running')
+    Plug 'pangloss/vim-javascript'
+    Plug 'w0rp/ale'
+    Plug 'Yggdroot/indentLine'
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
 endif
