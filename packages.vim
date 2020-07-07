@@ -73,7 +73,7 @@ let g:fzf_colors =
 
 let g:fzf_history_dir = '~/.local/share/fzf-history'
 " let $FZF_DEFAULT_COMMAND='ag -l --path-to-ignore ~/.ignore --nocolor --hidden -g ""'
-let $FZF_DEFAULT_COMMAND='rg --files --ignore-file ~/.ignore'
+let $FZF_DEFAULT_COMMAND='rg --files --ignore-file ~/.agignore'
 " ag 在.agignore 中忽略
 "============================== fzf end
 
